@@ -17,15 +17,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="nav-menu-left col-md-3">
+                    <div class="nav-menu-left col-md-3 col-xs-12 col-sm-12">
                         <div class="menu-active">
                             <span>SHOP ONLINE</span>
                             <span class="menuicon" style="background: url(&quot;http://d1z88p83zuviay.cloudfront.net/Images/menuicon1.jpg&quot;) no-repeat scroll;"> </span>
                         </div>
-                        <ul id="navigation">
+                        <ul id="navigation" class="hidden-xs hidden-sm">
                             <li>
                                 <a href="#">Patas</a>
-
                                 <div class="hidden-sm hidden-md hidden-xs">
                                     <h3>Patas</h3>
                                     <div><img src="http://placekitten.com/320/240"></div>
@@ -96,7 +95,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="slide-banner hidden-sm hidden-md hidden-xs">
+                    <div class="slide-banner col-md-9 hidden-sm hidden-md hidden-xs">
                         <div class="nav-top">
                             <ul>
                                 <li>
