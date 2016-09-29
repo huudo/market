@@ -38,6 +38,7 @@ body h1,h2,a {
     float: right;
     padding: 6px 2px;
 }
+
 .banner>.col-md-3{
     padding-right: 0px;
     padding-left: 0px; 
@@ -50,11 +51,105 @@ body h1,h2,a {
 .logo img{
     width: 100%;
     max-width: 280px;
-    height: auto;
+    height: 94px;
 }
-.basket{
+.right_banner{
+    min-width: 90px;
+    min-height: 50px;
+    float: left;
+}
+.bottomTop{
+    padding-top: 50px;
+}
+
+.search{
+    margin-left: 30px;
+    min-width: 700px;
+    float: left;
+}
+.top_right{
+    float: right;
+    padding-top: 10px;
+    position:absolute;
+    right:0;
+}
+.top_right ul{
     float: right;
 }
-.search{
+.top_right ul li{
+    border-right: 1px solid #9f988d;
     float: left;
+    list-style-type: none;
+    font-size: 11px;
+    color: #6f6f6f;
+    text-align: center;
+    min-width: 110px;
+}
+.top_right ul li:last-child{
+    border-right: none;
+}
+.top_right ul li div{
+    float: left;
+    background: url('../images/sprite-img.png')  no-repeat scroll 0 0;
+    margin: 0 1px;
+    width: 45px;
+    height: 30px;
+}
+.top_right ul li div.hour{
+    background-position: 2px -40px;
+    width: 40px;
+    margin-left: -5px;
+}
+.top_right ul li div.shipping{
+    background-position: 0 0;
+    margin-left: 5px;
+}
+.top_right ul li div.money{
+    background-position: 0px -92px;
+    width: 35px;
+}
+.basket{
+    width: 96px;
+    height: 44px;
+    background-color: #b71761;
+    position: absolute;
+    right: 0;
+}
+.img_basket{
+    background: url("../images/icon-cart.png");
+    float: left;
+    background-color: #b71761;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    height: 18px;
+    width: 22px;
+
+}
+
+.my_basket{
+    width: 74px;
+    font-size: 12px;
+    color: #fff;
+    float: left;
+    position: relative;
+    font-family: 'Cabin','Open Sans','HelveticaNeueLTPro-Lt', sans-serif;
+    padding: 8px 10px;
+}
+.my-cart {
+    display: inline-block;
+    line-height: 12px;
+    width: 61px;
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.item{
+    float: left;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 0 0 2px;
+    position: relative;
+    text-align: left;
 }

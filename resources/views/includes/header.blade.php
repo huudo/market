@@ -29,18 +29,53 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="banner">
-                        <div class="logo">
-                            <img src="{{Asset('public/images/logo.png')}}">
+                    <div class="logo">
+                        <img src="{{Asset('public/images/logo.png')}}">
+                    </div>
+                    <div class="right_banner"> 
+                        <div class="top_right">
+                            <ul>
+                                <li>
+                                    <div class="hour">
+                                        
+                                    </div>
+                                    2 HOURS
+                                    </br>DELIVERY
+                                </li>
+                                <li>
+                                    <div class="shipping">
+                                      
+                                    </div>
+                                     FREE SHIPPING
+                                    </br>ABOVE 10$
+                                </li>
+                                <li>
+                                    <div class="money">
+                                       
+                                    </div>
+                                     CASH/CARD 
+                                    </br>ON DELIVERY
+                                </li>
+                            </ul>
+                        </div>    
+                        <div class="bottomTop">
+                            <div class="hidden-sm hidden-md hidden-xs search">
+                                
+                            </div>                   
+                            <div class="basket">
+                                <div class="img_basket">
+
+                                </div>
+                                <div class="my_basket">
+                                    <span class="my-cart">MY CART</span></br>
+
+                                    <span class="item"><i class="spanCartCount">0</i> Item <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>  
                         </div>
-                    <div class="hidden-sm hidden-md hidden-xs search">
-                        search  
-                    </div>                   
-                    <div class="basket">
-                        basket
-                    </div>  
+                    </div>
                 </div>
-            </div>
-           
+            </div>           
         </div>
     </div>
 </header>
