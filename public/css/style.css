@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url('//fonts.gstatic.com/s/roboto/v15/NdF9MtnOpLzo-noMoG0miPesZW2xOQ-xsNqO47m55DA.woff2') format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/*****  GLOBAL  ******
+**********************/
+
+body h1,h2,a {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cabin','Open Sans','HelveticaNeueLTPro-Lt', sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+
+.ltopPage{
+    float: left;
+    padding-top: 6px;
+}
+.ltopPage p{
+    color: #7db42d;
+}
+.rtopPage{
+    float: right;
+}
+.contactUs, .login{
+    float: right;
+    padding: 8px 2px;
+    margin-left: 10px;
+}
+.contactUs a, .login a , .register a,.register span{
+    color: #fff;
+}
+.register{
+    float: right;
+    padding: 6px 2px;
+}
+.banner>.col-md-3{
+    padding-right: 0px;
+    padding-left: 0px; 
+    max-width: 300px;
+}
+.logo{
+    float: left;
+    max-width: 300px;
+}
+.logo img{
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+.basket{
+    float: right;
+}
+.search{
+    float: left;
+}
