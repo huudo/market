@@ -15,7 +15,24 @@ body h1,h2,a {
     font-size: 12px;
     color: #333;
 }
+.row, .col-md-12,.col-md-3 {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+@media(max-device-width : 768px)  {
+    .row,.container{
+        width: 100%;
+    }
+}
+@media(min-device-width : 768px)  {
 
+}
+.nav-moblie{
+    width: 200px;
+    height: 39px;
+    background-color: #CCC;
+}
 .ltopPage{
     float: left;
     padding-top: 6px;
@@ -38,11 +55,10 @@ body h1,h2,a {
     float: right;
     padding: 6px 2px;
 }
-
 .banner>.col-md-3{
     padding-right: 0px;
     padding-left: 0px; 
-    max-width: 300px;
+   
 }
 .logo{
     float: left;
@@ -152,4 +168,104 @@ body h1,h2,a {
     padding: 2px 0 0 2px;
     position: relative;
     text-align: left;
+}
+
+/* WRAPPER CSS*/
+.wrapper{
+    margin-top: 20px;
+}
+.menu-active{
+    background: none repeat scroll 0 0 #b71761;
+    height: 39px;
+    position: relative;
+    width: 100%;
+}
+.menu-active span{
+    color: #ffffff;
+    display: block;
+    font-family: "GothamNarrow-Bold";
+    font-size: 17px;
+    line-height: 39px;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 22px;
+}
+.menu-active span.menuicon{
+    background: url(http://d1z88p83zuviay.cloudfront.net/Images/menuicon.jpg) no-repeat scroll;
+    float: right;
+    height: 14px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 24px;
+    padding-left: 0;
+}
+.nav-menu-left{  
+   float: left;
+}
+
+#navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    border: 1px solid #e1e1e1;
+}
+
+#navigation li {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #efefef;
+
+}
+#navigation li:hover{
+    background-color: #b61671;
+}
+       
+#navigation li a{
+    display: block;
+    padding: 7px 25px;
+    background: url('../images/arrow-subcat.png') no-repeat scroll 95% 10px rgba(0, 0, 0, 0);
+    text-transform: capitalize;
+    font-family: 'GothamNarrow-Book','GothamNarrow-Light', sans-serif;
+    text-shadow: 0px 0px 0px #dfdfdf;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+
+#navigation li a + div {
+    background: #CCC;
+    clip: rect(0 0 0 0);
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 320px;
+}
+
+#navigation li:hover div {
+    clip: auto;
+}
+#navigation li:hover a{
+    text-decoration: none;
+    color: #ffffff;
+    background: url('../images/arrow-subcat-hover.png') no-repeat scroll 95% 11px rgba(0, 0, 0, 0);
+    background-size: 4px 9px;
+}
+
+#navigation li img {
+    height: 240px;
+    width: 320px;
+}
+
+.slide-banner{
+    float: left;
+    
+}
+.nav-top{
+    width: 100%;
+    height: 39px;
+    background-color: #CCC;
 }

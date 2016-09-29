@@ -59,8 +59,7 @@
                             </ul>
                         </div>    
                         <div class="bottomTop">
-                            <div class="hidden-sm hidden-md hidden-xs search">
-                                
+                            <div class="hidden-sm hidden-md hidden-xs search">                                
                             </div>                   
                             <div class="basket">
                                 <div class="img_basket">
