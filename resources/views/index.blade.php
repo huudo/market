@@ -1,6 +1,8 @@
 <html>
+
 <head>
     <title>Dịch vụ đi chợ thuê</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes"/>
 </head>
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/bootstrap.min.css')}}>
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/bootstrap-theme.min.css')}}>
@@ -95,15 +97,64 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="slide-banner col-md-9 hidden-sm hidden-md hidden-xs">
-                        <div class="nav-top">
+                    <div class="slide-banner col-md-9 col-xs-12 col-sm-12">
+                        <div class="nav-top hidden-sm hidden-md hidden-xs">
                             <ul>
                                 <li>
 
                                 </li>
                             </ul>
                         </div>
+                        <div class="slide-show">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                <div class="item active">
+                                  <img src="{{Asset('public/images/1.jpg')}}" alt="...">
+                                  <div class="carousel-caption">
+                                     
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <img src="{{Asset('public/images/2.jpg')}}" alt="...">
+                                  <div class="carousel-caption">
+                                      
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <img src="{{Asset('public/images/3.jpg')}}" alt="...">
+                                  <div class="carousel-caption">
+                                     
+                                  </div>
+                                </div>
+                                </div>
+                            </div> <!-- Carousel -->
+                        </div>
+                        <div class="row">
+                            <div class="box col-md-3 col-sm-6 col-xs-6">
+                                <a href="#"><img src="{{Asset('public/images/box1.jpg')}}"></a>
+                            </div>
+                            <div class="box col-md-3 col-sm-6 col-xs-6">
+                                <a href="#"><img src="{{Asset('public/images/box2.jpg')}}"></a>
+                            </div>
+                            <div style="clear:both" class="hidden-lg hidden-md"></div>
+                            <div class="box col-md-3 col-sm-6 col-xs-6">
+                                <a href="#"><img src="{{Asset('public/images/box3.jpg')}}"></a>
+                            </div>
+                             <div class="box col-md-3 col-sm-6 col-xs-6">
+                                <a href="#"><img src="{{Asset('public/images/box4.jpg')}}"></a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
                
             </div>

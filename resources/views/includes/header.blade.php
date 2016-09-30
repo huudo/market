@@ -42,7 +42,7 @@
                                     2 HOURS
                                     </br>DELIVERY
                                 </li>
-                                <li>
+                                <li class="li-shipping">
                                     <div class="shipping">
                                       
                                     </div>
