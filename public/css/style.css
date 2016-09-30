@@ -271,34 +271,8 @@ body h1,h2,a {
 }
 .nav-menu-left:hover #navigation{
         display: block !important;
-    }
-@media(max-width : 900px)  {
-    .menu-active{
-        height: 50px;
-        padding: 8px;
-    }
-    .menu-active span{
-        color: #ffffff;
-        display: block;
-        font-family: "GothamNarrow-Bold";
-        font-size: 22px;
-        line-height: 39px;
-        margin: 0;
-        text-transform: uppercase;
-        text-align: left;
-        padding-left: 22px;
-    }
-.menu-active span.menuicon{
-        background: url('../images/menuicon.png') no-repeat scroll;
-        float: right;
-        height: 30px;
-        position: absolute;
-        right: 10px;
-        top: 20px;
-        width: 30px;
-        padding-left: 0;
-    }
 }
+
 .slide-show{
     width: 100%;
 }
@@ -329,33 +303,30 @@ body h1,h2,a {
     width: 100%;
     height: auto;
 }
-
-@media(max-width : 480px)  {
-    .container{
-        padding:0;
-    }
-    .right_banner{
-        width: 100%;
-    }
-    .top_right{
-        width: 100%;
-    }
-    .top_right ul{
-        padding: 0;
-        float: left;
-    }
-    .top_right ul li:last-child{
-        display: none;
-    }
-    .bottomTop{
-        position: relative;
-    }
-    .basket{
-        right: 2px;
-        bottom: 0;
-    }
-    .top_right ul li.li-shipping{
-        border-right: none;
-    }
-
+.content{
+    width: 100%;
+    padding-top: 30px;
 }
+.head-content{
+    padding-top: 20px;
+    background: url('../images/heading-bg.png') repeat-x scroll 0 10px;
+    padding: 10px 0;
+    width: 100%;
+    margin: 20px 0 10px;
+}
+.head-content h2{
+    background: #ffffff;
+    display: table;
+    margin: -6px auto 0;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-family: 'GothamNarrow-Book';
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.head-content h2 span{
+    color: #c31765;
+    font-family: 'GothamNarrow-Bold';
+}
+
+/*Gallery flick*/

@@ -9,10 +9,14 @@
     <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
 
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/style.css')}}>
+    <link rel="stylesheet" type="text/css" href={{Asset('public/css/reponsive.css')}}>
+    <link rel="stylesheet" type="text/css" href={{Asset('public/css/jcarousel.responsive.css')}}>
     <script type="text/javascript" src={{Asset('public/js/jquery213.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/api.jquery.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/bootstrap.min.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/nav-menu.js')}}></script>
+    <script type="text/javascript" src={{Asset('public/js/jquery.jcarousel.min.js')}}></script>
+    <script type="text/javascript" src={{Asset('public/js/jcarousel.responsive.js')}}></script>
 <body>
     @include('includes.header')
     <div class="wrapper">
@@ -158,11 +162,49 @@
                 </div>
                
             </div>
+            <div class="row">
+                 <div class="col-md-12">
+                    <div class="content">
+                        <div class="head-content">
+                            <h2>HÔM NAY <span>ĂN GÌ</span> </h2>
+                        </div>
+                        <div class="jcarousel-wrapper">
+                            <div class="jcarousel" data-jcarousel="true">
+                                <ul style="left: -200px; top: 0px;">
+                                    <li style="width: 200px;"><img src="{{Asset('public/images/3.jpg')}}" alt="Image 1"></li>                                    
+                                    <li style="width: 200px;"><img src="{{Asset('public/images/1.jpg')}}" alt="Image 2"></li>
+                                    <li style="width: 200px;"><img src="{{Asset('public/images/2.jpg')}}" alt="Image 3"></li>
+                                    <li style="width: 200px;"><img src="{{Asset('public/images/3.jpg')}}" alt="Image 4"></li>
+                                    <li style="width: 200px;"><img src="{{Asset('public/images/box1.jpg')}}" alt="Image 5"></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="head-content">
+                            <h2>MUA HÀNG <span>THEO MÓN</span> </h2>
+                        </div>
+                        <div class="jcarousel-wrapper">
+                            <div class="jcarousel" data-jcarousel="true">
+                                <ul style="left: -200px; top: 0px;">
+                                    <li style="width: 200px;"><img src="{{Asset('public/images/3.jpg')}}" alt="Image 1"></li>                                    
+                                    <li style="width: 200px;"><img src="{{Asset('public/images/1.jpg')}}" alt="Image 2"></li>
+                                    <li style="width: 200px;"><img src="{{Asset('public/images/2.jpg')}}" alt="Image 3"></li>
+                                    <li style="width: 200px;"><img src="{{Asset('public/images/3.jpg')}}" alt="Image 4"></li>
+                                    <li style="width: 200px;"><img src="{{Asset('public/images/box1.jpg')}}" alt="Image 5"></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script type="text/javascript">
-          
-    </script>
+
     @include('includes.footer')
 </body>
 </html>
