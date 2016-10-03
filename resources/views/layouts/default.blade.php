@@ -113,9 +113,13 @@
                     <span>Trang chủ / <a href="">danh-muc</a></span>
                 </div>
                 <div class="menu-left col-md-3 hidden-xs hidden-sm">
-                    <span class="menu-left-tittle">REFINE SEARCH</span>
+                    <span class="menu-left-tittle">RAU & TRÁI CÂY</span>
                     <ul class="nav-menu-left">
-
+                        <span>Rau&Trái cây</span>
+                        <li>Rau xanh</li>
+                        <li>Củ quả</li>
+                        <li>Rau sống</li>
+                        <li>Trái cây</li>
                     </ul>
                 </div>
                 <div class="col-md-9 col-xs-12 col-sm-12 content-page">

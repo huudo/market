@@ -130,3 +130,8 @@ a.link-product:hover{
     margin-right: 10px;
     
 }
+.nav-menu-left{
+    width:100%;
+    border: 1px solid #CCC; 
+    list-style: none;
+}
