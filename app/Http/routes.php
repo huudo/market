@@ -20,19 +20,8 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/du-an/',['uses' => 'HomeController@project']);
+Route::get('/{category}/',['uses' => 'HomeController@category']);
 Route::get('/du-an/{id}',['uses' => 'HomeController@project_retail']);
-
-Route::get('/thiet-ke/{name}',['uses' => 'HomeController@design']);
-Route::get('/thiet-ke/{name}/{id}',['uses' => 'HomeController@design_retail']);
-
-Route::get('/tu-van/{name}',['uses' => 'HomeController@suicide']);
-Route::get('/tu-van/{name}/{id}',['uses' => 'HomeController@suicideDetail']);
-
-Route::get('/tin-tuc', 'HomeController@news');
-
-Route::get('/tin-tuc/{id}', 'HomeController@newsRetail');
-
 //Route Admin
 Route::group(array('middleware'=>'auth','prefix'=>'admin'), function(){
     Route::get("/",['uses' => 'AdminController@index']);

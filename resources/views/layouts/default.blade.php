@@ -1,63 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="google-site-verification" content="9211v6IrzwDO4vs4jLFn2sUg_44PugO_hMMIfQeur00" />
-    <meta charset="UTF-8">
-    <title>
-     Vi-Home        
-    </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-     
-    <meta name="description" content="">  
-<link rel="shortcut icon" href="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/favicon.png?1457574486889">    
-<link rel="stylesheet" type="text/css" href={{Asset('public/css/bootstrap.min.css')}}>
-<link rel="stylesheet" type="text/css" href={{Asset('public/css/bootstrap-theme.min.css')}}>
-<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
-<link rel="stylesheet" type="text/css" href={{Asset('public/css/style.css')}}>
-<script type="text/javascript" src={{Asset('public/js/jquery213.js')}}></script>
-<script type="text/javascript" src={{Asset('public/js/jquery.hoverdir.js')}}></script>
-<script type="text/javascript" src={{Asset('public/js/modernizr.custom.97074.js')}}></script>
-<script type="text/javascript" src={{Asset('public/js/api.jquery.js')}}></script>
-<script type="text/javascript" src={{Asset('public/js/bootstrap.min.js')}}></script>
-</head>
-<body>
-	<script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '1727282974222089',
-	      xfbml      : true,
-	      version    : 'v2.5'
-	    });
-	  };
+<html>
 
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
-	@include('includes.header')
-	<div id="main" style="padding-top: 66px;" class="container">		
-		<div class="row bg_top">
-			<div class="col-md-6">
-				<div class=" icon_top">
-					<img src="{{Asset('public/images/')}}/{{$icon}}">
-				</div>
-				<div class="text_top">
-					<h2>{{$tittle}}</h2>
-				</div>	
-			</div>
-			<div class="col-md-6 hidden-sm hidden-md hidden-xs">
-				<div class="top_right">
-					<h2><i class="fa fa-phone" aria-hidden="true"></i>096.668.6892</h2>				
-				</div>
-			</div>
-			
-		</div>
-		  @yield('content')						
-	</div>
-	@include('includes.footer')
+<head>
+    <title>Dịch vụ đi chợ thuê</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes"/>
+</head>
+    <link rel="stylesheet" type="text/css" href={{Asset('public/css/bootstrap.min.css')}}>
+    <link rel="stylesheet" type="text/css" href={{Asset('public/css/bootstrap-theme.min.css')}}>
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
+
+    <link rel="stylesheet" type="text/css" href={{Asset('public/css/style.css')}}>
+    <link rel="stylesheet" type="text/css" href={{Asset('public/css/default.css')}}>
+    <link rel="stylesheet" type="text/css" href={{Asset('public/css/reponsive.css')}}>
+    <link rel="stylesheet" type="text/css" href={{Asset('public/css/jcarousel.responsive.css')}}>
+    <script type="text/javascript" src={{Asset('public/js/jquery213.js')}}></script>
+    <script type="text/javascript" src={{Asset('public/js/api.jquery.js')}}></script>
+    <script type="text/javascript" src={{Asset('public/js/bootstrap.min.js')}}></script>
+    <script type="text/javascript" src={{Asset('public/js/nav-menu.js')}}></script>
+    <script type="text/javascript" src={{Asset('public/js/jquery.jcarousel.min.js')}}></script>
+    <script type="text/javascript" src={{Asset('public/js/jcarousel.responsive.js')}}></script>
+<body>
+    @include('includes.header')
+     <div class="container">
+        <div class="row">
+            <div class="nav-menu-left col-md-3 col-xs-12 col-sm-12">
+                <div class="menu-active">
+                    <span>SHOP ONLINE</span>
+                    <span class="menuicon" style="background: url(&quot;http://d1z88p83zuviay.cloudfront.net/Images/menuicon1.jpg&quot;) no-repeat scroll;"> </span>
+                </div>
+                <ul id="navigation" class="hidden-xs hidden-sm">
+                            <li>
+                                <a href="#">Patas</a>
+                                <div class="hidden-sm hidden-md hidden-xs">
+                                    <h3>Patas</h3>
+                                    <div><img src="http://placekitten.com/320/240"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Golden Snub-Nosed</a>
+                                <div class="hidden-sm hidden-md hidden-xs">
+                                    <h3>Golden Snub-Nosed</h3>
+                                    <div><img src="http://placekitten.com/g/320/240"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Duoc Langur</a>
+                                <div class="hidden-sm hidden-md hidden-xs">
+                                    <h3>Duoc Langur</h3>
+                                    <div><img src="http://placekitten.com/320/240"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Baby Pygmy Marmoset</a>
+                                <div class="hidden-sm hidden-md hidden-xs">
+                                    <h3>Baby Pygmy Marmoset</h3>
+                                    <div><img src="http://placekitten.com/g/320/240"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Black Lion Tamarin</a>
+                                <div class="hidden-sm hidden-md hidden-xs">
+                                    <h3>Black Lion Tamarin</h3>
+                                    <div><img src="http://placekitten.com/320/240"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Monk Saki</a>
+                                <div class="hidden-sm hidden-md hidden-xs">
+                                    <h3>Monk Saki</h3>
+                                    <div><img src="http://placekitten.com/g/320/240"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Gabon Talapoin</a>
+                                <div class="hidden-sm hidden-md hidden-xs">
+                                    <h3>Gabon</h3>
+                                    <div><img src="http://placekitten.com/320/240"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Grivet</a>
+                                <div class="hidden-sm hidden-md hidden-xs">
+                                    <h3>Grivet</h3>
+                                    <div><img src="http://placekitten.com/g/320/240"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Red Leaf</a>
+                                <div class="hidden-sm hidden-md hidden-xs">
+                                    <h3>Red Leaf</h3>
+                                    <div><img src="http://placekitten.com/320/240"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">King Colobus</a>
+                                <div class="hidden-sm hidden-md hidden-xs">
+                                    <h3>King Colobus</h3>
+                                    <div><img src="http://placekitten.com/g/320/240"></div>
+                                </div>
+                            </li>
+                        </ul>
+            </div>
+            <div class="col-md-9 hidden-xs hidden-sm">
+                <div class="top_menu">
+                    <ul class="">
+
+                    </ul>   
+                </div>
+                
+            </div>
+            <div class="row"> 
+                <div class="col-md-12 hidden-xs link-top">
+                    <span>Trang chủ / <a href="">danh-muc</a></span>
+                </div>
+                <div class="menu-left col-md-3 hidden-xs hidden-sm">
+                    <span class="menu-left-tittle">REFINE SEARCH</span>
+                    <ul class="nav-menu-left">
+
+                    </ul>
+                </div>
+                <div class="col-md-9 col-xs-12 col-sm-12 content-page">
+                    @yield('content')
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
+</html>    

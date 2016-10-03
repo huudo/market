@@ -1,4 +1,7 @@
 @media(max-width : 900px)  {
+    .content-page{
+        padding-left: 0px;
+    }
     .menu-active{
         height: 50px;
         padding: 8px;
@@ -26,6 +29,18 @@
     }
 }
 @media(max-width : 480px)  {
+    .content-page{
+        padding-left: 0px;
+    }
+    .price{
+        width: 100%;
+        float: none;
+    }
+    .action-buy{
+        margin: 0px auto;
+        float: none;
+        margin-top: 20px;
+    }
     .container{
         padding:0;
     }

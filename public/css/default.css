@@ -1,0 +1,132 @@
+#navigation{
+    display: none;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    z-index: 9999;
+}
+.top_menu{
+    height: 40px;
+    width: 100%;
+    background-color: #CCC;
+}
+.top_menu ul{
+    padding: 0px;
+    margin: 0px;
+}
+.link-top{
+    width: 100%;
+    background: #fff;
+    height: 50px;
+}
+.menu-left-tittle{
+    padding: 10px 0px 10px 25px;
+    font-size: 19px;
+    color: White;
+    margin-bottom: 2px;
+    display: block;
+    border: solid 1px #EDEDED;
+    font-family: GothamNarrow-Medium;
+    background: #b61671;
+}
+.content-page{
+    padding-left: 20px;
+}
+
+.banner-page{
+    width: 100%;    
+}
+.banner-page img{
+    width: 100%;
+    height: auto;
+}
+.text-page{
+    width: 100%;
+    padding-top: 10px;
+    height: 50px;
+}
+.CommonText{
+    font-family: 'GothamNarrow-Medium';
+    cursor: pointer;
+    font-size: 16px;
+    color: #B71761;
+}
+.CommonTex2{
+    cursor: pointer;
+    font-size: 14px;
+    color: #9f967f;
+}
+.list-category{
+    padding-bottom: 20px;
+}
+.list-category img{
+    width: 100%;
+    height: auto;
+}
+.col-md-6{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.line-page{
+    width: 100%;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    color: #d3d2d2;
+    height: 3px;
+}
+.list-product{
+    padding-top: 30px;
+}
+.product{
+    text-align: center;
+    border-right: 1px solid #ececec;
+    margin-top: 5px;
+    
+}
+.product:hover{
+    -webkit-box-shadow: 9px 9px 5px -7px rgba(0,0,0,0.37);
+    -moz-box-shadow: 9px 9px 5px -7px rgba(0,0,0,0.37);
+    box-shadow: 9px 9px 5px -7px rgba(0,0,0,0.37);
+}
+.product img{
+    width: 80%;
+    height: auto;
+    cursor: pointer;
+}
+.bottom-product{
+    width: 100%;
+}
+.name-product{
+    margin: 0px auto;
+    width: 70%;
+    border-top: 1px solid #CCC;
+    padding-top: 10px;
+    margin-bottom: 25px;
+}
+a.link-product{
+    font-size: 13px;
+    color: #402e00;
+    text-align: center;
+    font-family: 'Cabin','Open Sans','HelveticaNeueLTPro-Lt', sans-serif;
+
+}
+a.link-product:hover{
+    color: #880033; 
+    text-decoration: none;   
+}
+.price{
+    width: 90px;
+    float: left;
+}
+.action-buy{
+    width: 65px;
+    height: 25px;
+    padding-top: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background-image: url(http://d1z88p83zuviay.cloudfront.net/Images/CartAddBtn.PNG);
+    float: right;
+    margin-right: 10px;
+    
+}
