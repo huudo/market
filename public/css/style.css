@@ -19,7 +19,6 @@ a, a:active, a:visited, a:hover {
     cursor: pointer;
     outline: 0 none;
     text-decoration: none;
-    color: #880033;
 }
 .row, .col-md-12,.col-md-3, .col-md-9 {
     margin-right: 0px;
@@ -207,6 +206,7 @@ a, a:active, a:visited, a:hover {
 }
 .nav-menu-left{  
    float: left;
+   width: 20%;
 }
 
 #navigation {
@@ -267,6 +267,7 @@ a, a:active, a:visited, a:hover {
 .slide-banner{
     float: left;
     padding: 0px;
+    width: 80%;
 }
 .nav-top{
     width: 100%;

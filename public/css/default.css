@@ -17,7 +17,16 @@
 .link-top{
     width: 100%;
     background: #fff;
-    height: 50px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-family: "GothamNarrow-Book";
+}
+.link-top span{
+    font-family: "GothamNarrow-Book";
+}
+.menu-left{
+    width: 20%;
 }
 .menu-left-tittle{
     padding: 10px 0px 10px 25px;
@@ -31,6 +40,7 @@
 }
 .content-page{
     padding-left: 20px;
+    width: 80%;
 }
 
 .banner-page{
@@ -130,8 +140,29 @@ a.link-product:hover{
     margin-right: 10px;
     
 }
-.nav-menu-left{
+.left-menu{
     width:100%;
     border: 1px solid #CCC; 
     list-style: none;
+    padding-left: 25px;
+}
+ul.left-menu li{
+    line-height: 31.4px;
+    font-family: "GothamNarrow-Book";
+    font-size: 14px;
+    text-align: left;
+    padding-top: 5px;
+    color: black;
+    /* text-shadow: 1px 1px 1px #dfdfdf; */
+}
+ul.left-menu li a{
+    font-family: "GothamNarrow-Book";
+    font-weight: bold;
+}
+ul.left-menu li a:hover{
+    color: #880033;
+}
+.banner-left img{
+    width: 100%;
+    height: auto;
 }

@@ -1,4 +1,7 @@
 @media(max-width : 900px)  {
+    .slide-banner, .nav-menu-left,.content-page{
+        width: 100%;
+    }
     .content-page{
         padding-left: 0px;
     }
@@ -29,6 +32,10 @@
     }
 }
 @media(max-width : 480px)  {
+
+    .slide-banner, .nav-menu-left,.content-page{
+        width: 100%;
+    }
     .content-page{
         padding-left: 0px;
     }

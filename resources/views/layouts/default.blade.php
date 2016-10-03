@@ -114,13 +114,15 @@
                 </div>
                 <div class="menu-left col-md-3 hidden-xs hidden-sm">
                     <span class="menu-left-tittle">RAU & TRÁI CÂY</span>
-                    <ul class="nav-menu-left">
-                        <span>Rau&Trái cây</span>
-                        <li>Rau xanh</li>
-                        <li>Củ quả</li>
-                        <li>Rau sống</li>
-                        <li>Trái cây</li>
+                    <ul class="left-menu">
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Rau xanh</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Củ quả</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Rau sống</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Trái cây</a></li>
                     </ul>
+                    <div class="banner-left">
+                        <img src="{{Asset('public/images/banner-left.jpg')}}">
+                    </div>
                 </div>
                 <div class="col-md-9 col-xs-12 col-sm-12 content-page">
                     @yield('content')
