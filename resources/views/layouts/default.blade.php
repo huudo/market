@@ -28,77 +28,23 @@
                     <span class="menuicon" style="background: url(&quot;http://d1z88p83zuviay.cloudfront.net/Images/menuicon1.jpg&quot;) no-repeat scroll;"> </span>
                 </div>
                 <ul id="navigation" class="hidden-xs hidden-sm">
-                            <li>
-                                <a href="#">Patas</a>
-                                <div class="hidden-sm hidden-md hidden-xs">
-                                    <h3>Patas</h3>
-                                    <div><img src="http://placekitten.com/320/240"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Golden Snub-Nosed</a>
-                                <div class="hidden-sm hidden-md hidden-xs">
-                                    <h3>Golden Snub-Nosed</h3>
-                                    <div><img src="http://placekitten.com/g/320/240"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Duoc Langur</a>
-                                <div class="hidden-sm hidden-md hidden-xs">
-                                    <h3>Duoc Langur</h3>
-                                    <div><img src="http://placekitten.com/320/240"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Baby Pygmy Marmoset</a>
-                                <div class="hidden-sm hidden-md hidden-xs">
-                                    <h3>Baby Pygmy Marmoset</h3>
-                                    <div><img src="http://placekitten.com/g/320/240"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Black Lion Tamarin</a>
-                                <div class="hidden-sm hidden-md hidden-xs">
-                                    <h3>Black Lion Tamarin</h3>
-                                    <div><img src="http://placekitten.com/320/240"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Monk Saki</a>
-                                <div class="hidden-sm hidden-md hidden-xs">
-                                    <h3>Monk Saki</h3>
-                                    <div><img src="http://placekitten.com/g/320/240"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Gabon Talapoin</a>
-                                <div class="hidden-sm hidden-md hidden-xs">
-                                    <h3>Gabon</h3>
-                                    <div><img src="http://placekitten.com/320/240"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Grivet</a>
-                                <div class="hidden-sm hidden-md hidden-xs">
-                                    <h3>Grivet</h3>
-                                    <div><img src="http://placekitten.com/g/320/240"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Red Leaf</a>
-                                <div class="hidden-sm hidden-md hidden-xs">
-                                    <h3>Red Leaf</h3>
-                                    <div><img src="http://placekitten.com/320/240"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">King Colobus</a>
-                                <div class="hidden-sm hidden-md hidden-xs">
-                                    <h3>King Colobus</h3>
-                                    <div><img src="http://placekitten.com/g/320/240"></div>
-                                </div>
-                            </li>
-                        </ul>
+                     @foreach($danhmuc as $key)
+                        <li class="navigation-li">
+                            <a href="#">{{$key['name']}}</a>
+                            <div class="hidden-sm hidden-md hidden-xs danh-muc">
+                                    <div class="top-danh-muc">
+                                        <span>{{$key['name']}}</span>
+                                    </div>                                            
+                                    <ul>
+                                        @foreach($theloai[$key['id'] - 1] as $test)
+                                            <li>{{$test['name']}}</li>
+                                        @endforeach
+                                    </ul>
+                                   
+                            </div>
+                        </li>
+                    @endforeach           
+                </ul>
             </div>
             <div class="col-md-9 hidden-xs hidden-sm">
                 <div class="top_menu">

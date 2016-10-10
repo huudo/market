@@ -5,10 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-use App\Project;
-use App\ProjectImg;
-use App\News;
-use App\Suicide;
+use App\DanhMuc;
+use App\TheLoai;
 
 class HomeController extends Controller
 {
@@ -24,13 +22,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $data['danhmuc'] = DanhMuc::getDanhMuc();
+        return view('home',$data);
     }
     public function home(){
-        return view('index');
+        $data['danhmuc'] = DanhMuc::getDanhMuc();
+        $data['theloai'] = TheLoai::getTheLoai();
+        return view('index',$data);
     }
     
     public function category(){
-        return view('page.danhmuc');        
+        $data['danhmuc'] = DanhMuc::getDanhMuc();
+        $data['theloai'] = TheLoai::getTheLoai();
+        return view('page.danhmuc',$data);        
     }
 }

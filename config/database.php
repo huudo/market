@@ -55,7 +55,7 @@ return [
         'mysql' => [
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'database'  => 'vihome',
+            'database'  => 'market',
             'username'  => 'root',
             'password'  => '',
             'charset'   => 'utf8',
