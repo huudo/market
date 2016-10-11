@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/style.css')}}>
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/reponsive.css')}}>
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/jcarousel.responsive.css')}}>
+    
     <script type="text/javascript" src={{Asset('public/js/jquery213.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/api.jquery.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/bootstrap.min.js')}}></script>

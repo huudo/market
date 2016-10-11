@@ -30,7 +30,7 @@
                 <ul id="navigation" class="hidden-xs hidden-sm">
                      @foreach($danhmuc as $key)
                         <li class="navigation-li">
-                            <a href="#">{{$key['name']}}</a>
+                            <a href="#" class="only">{{$key['name']}}</a>
                             <div class="hidden-sm hidden-md hidden-xs danh-muc">
                                     <div class="top-danh-muc">
                                         <span>{{$key['name']}}</span>
@@ -46,7 +46,7 @@
                     @endforeach           
                 </ul>
             </div>
-            <div class="col-md-9 hidden-xs hidden-sm">
+            <div class="col-md-9 hidden-xs hidden-sm content-page">
                 <div class="top_menu">
                     <ul class="">
 
@@ -55,7 +55,7 @@
                 
             </div>
             <div class="row"> 
-                <div class="col-md-12 hidden-xs link-top">
+                <div class="col-md-12 hidden-xs hidden-sm link-top">
                     <span>Trang chủ / <a href="">danh-muc</a></span>
                 </div>
                 <div class="menu-left col-md-3 hidden-xs hidden-sm">

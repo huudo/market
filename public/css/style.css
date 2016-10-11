@@ -36,6 +36,7 @@ a, a:active, a:visited, a:hover {
         width: 100%;
     }
 }
+
 .ltopPage{
     float: left;
     padding-top: 6px;
@@ -266,6 +267,7 @@ a, a:active, a:visited, a:hover {
     height: 240px;
     width: 320px;
 }
+
 .top-danh-muc{
     padding-top: 10px;
     padding-bottom: 10px;

@@ -30,6 +30,9 @@
         width: 30px;
         padding-left: 0;
     }
+    .nav-menu-left{
+        margin-top: 50px;
+    }
 }
 @media(max-width : 480px)  {
 
