@@ -23,7 +23,7 @@
     <div class="line-page">
 
     </div>
-    <div class="row sdsd" style="padding-top: 10px;">
+    <div class="row" style="padding-top: 10px;">
         <div class="list-product">
             <div class='col-md-3 col-xs-4 product'>
                 <img src="{{Asset('public/images/product.jpg')}}">
