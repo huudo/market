@@ -226,7 +226,7 @@ a, a:active, a:visited, a:hover {
     background-color: #b61671;
 }
        
-#navigation li a{
+#navigation li a.only{
     display: block;
     padding: 7px 25px;
     background: url('../images/arrow-subcat.png') no-repeat scroll 95% 10px rgba(0, 0, 0, 0);
@@ -255,7 +255,7 @@ a, a:active, a:visited, a:hover {
     clip: auto;
 }
 
-#navigation li:hover a{
+#navigation li:hover a.only{
     text-decoration: none;
     color: #ffffff;
     background: url('../images/arrow-subcat-hover.png') no-repeat scroll 95% 11px rgba(0, 0, 0, 0);
@@ -282,11 +282,16 @@ a, a:active, a:visited, a:hover {
     padding-bottom: 10px;
 }
 .danh-muc ul li{
-    padding: 5px;
+    padding: 10px;
     border-bottom: none !important;
+    font-size: 14px;
+}
+.danh-muc ul li a{
+    color: black !important;
 }
 .danh-muc ul li:hover{
     background-color: none !important;
+    color: #b71761;
 }
 
 .slide-banner{

@@ -166,3 +166,8 @@ ul.left-menu li a:hover{
     width: 100%;
     height: auto;
 }
+#commonText{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}

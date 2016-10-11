@@ -20,20 +20,28 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $data['danhmuc'] = DanhMuc::getDanhMuc();
-        return view('home',$data);
-    }
     public function home(){
         $data['danhmuc'] = DanhMuc::getDanhMuc();
         $data['theloai'] = TheLoai::getTheLoai();
         return view('index',$data);
     }
-    
-    public function category(){
+    public function category($menu){
         $data['danhmuc'] = DanhMuc::getDanhMuc();
         $data['theloai'] = TheLoai::getTheLoai();
+
+        $danhmuc = DanhMuc::getInfoPage($menu);
+        $data['page'] = $danhmuc;
+        $data['listMenu'] = DanhMuc::getListMenu($menu);
         return view('page.danhmuc',$data);        
+    }
+
+    public function product($menu,$slug){
+        $data['danhmuc'] = DanhMuc::getDanhMuc();
+        $data['theloai'] = TheLoai::getTheLoai();
+        $danhmuc = DanhMuc::getInfoPage($menu);
+        $data['page'] = $danhmuc;
+        $data['listMenu'] = DanhMuc::getListMenu($menu);
+
+        return view('page.sanpham',$data);
     }
 }

@@ -31,14 +31,14 @@
                         <ul id="navigation" class="hidden-xs hidden-sm">
                             @foreach($danhmuc as $key)
                                 <li class="navigation-li">
-                                    <a href="#">{{$key['name']}}</a>
+                                    <a href="{{URL::to('danh-muc/')}}/{{$key['slug']}}" class="only">{{$key['name']}}</a>
                                     <div class="hidden-sm hidden-md hidden-xs danh-muc">
                                             <div class="top-danh-muc">
                                                 <span>{{$key['name']}}</span>
                                             </div>                                            
                                             <ul>
                                                 @foreach($theloai[$key['id'] - 1] as $test)
-                                                    <li>{{$test['name']}}</li>
+                                                    <a href="{{URL::to('danh-muc/')}}/{{$key['slug']}}/{{$test['slug']}}"><li>{{$test['name']}}</li></a>
                                                 @endforeach
                                             </ul>
                                            

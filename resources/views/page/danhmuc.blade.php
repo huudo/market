@@ -1,26 +1,21 @@
 @extends('layouts.default')
 @section('content')
     <div class='banner-page'>
-        <img src="{{Asset('public/images/Sup_5.jpg')}}">
+        <img src="{{Asset('public/images/')}}/{{$page['url']}}">
     </div>
     <div class="text-page">
-        <span id="commonText" class="CommonText">FRUITS &amp; VEGETABLES</span>
+        <span id="commonText" class="CommonText">{{$page['name']}}</span>
         <span id="commonText2" class="CommonTex2"> 310 Products.</span>
     </div>
-    <div class="row">
-        <div class="col-md-6 col-xs-12 list-category">
-            <img src="{{Asset('public/images/banner1.jpg')}}">      
-        </div>
-        <div class="col-md-6 col-xs-12 list-category">
-            <img src="{{Asset('public/images/banner2.jpg')}}">      
-        </div>
-         <div class="col-md-6 col-xs-12 list-category">
-            <img src="{{Asset('public/images/banner2.jpg')}}">      
-        </div>
-         <div class="col-md-6 col-xs-12 list-category">
-            <img src="{{Asset('public/images/banner1.jpg')}}">      
-        </div>
+    <div class="line-page">
 
+    </div>
+    <div class="row" style="padding-top:20px;">
+        @foreach($listMenu as $key)
+            <div class="col-md-6 col-xs-12 list-category">
+                <a href=""><img src="{{Asset('public/images/')}}/{{$key['url']}}"></a>                  
+            </div>
+        @endforeach
     </div>
     <div class="text-page">
         <span id="commonText" class="CommonText">SẢN PHẨM NỔI BẬT</span>
@@ -28,7 +23,7 @@
     <div class="line-page">
 
     </div>
-    <div class="row">
+    <div class="row sdsd" style="padding-top: 10px;">
         <div class="list-product">
             <div class='col-md-3 col-xs-4 product'>
                 <img src="{{Asset('public/images/product.jpg')}}">

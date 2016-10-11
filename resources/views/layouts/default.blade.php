@@ -59,12 +59,12 @@
                     <span>Trang chủ / <a href="">danh-muc</a></span>
                 </div>
                 <div class="menu-left col-md-3 hidden-xs hidden-sm">
-                    <span class="menu-left-tittle">RAU & TRÁI CÂY</span>
+                    <span class="menu-left-tittle">{{$page['name']}}</span>
                     <ul class="left-menu">
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Rau xanh</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Củ quả</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Rau sống</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Trái cây</a></li>
+                        
+                        @foreach($listMenu as $menu)
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>  {{$menu['name']}}</a></li>
+                        @endforeach
                     </ul>
                     <div class="banner-left">
                         <img src="{{Asset('public/images/banner-left.jpg')}}">

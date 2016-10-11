@@ -18,32 +18,6 @@ Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
-Route::get('/home', 'HomeController@index');
+Route::get('/danh-muc/{menu}', 'HomeController@category');
 
-Route::get('/{category}/',['uses' => 'HomeController@category']);
-Route::get('/du-an/{id}',['uses' => 'HomeController@project_retail']);
-//Route Admin
-Route::group(array('middleware'=>'auth','prefix'=>'admin'), function(){
-    Route::get("/",['uses' => 'AdminController@index']);
-    Route::get("/thiet-ke/{id}",['uses' => 'AdminController@design']);
-
-    Route::get("/thiet-ke/createNew/{id}",['uses' => 'AdminController@designCreate']);    
-    Route::post("/thiet-ke/createNew/{id}",['uses' => 'AdminController@postCreate']);
-
-    //Route to porject details
-    Route::get("/thiet-ke/createNew/{design}/{id}",['uses' => 'AdminController@project']);    
-    Route::post("/thiet-ke/createNew/{design}/{id}",['uses' => 'AdminController@postProject']);
-
-    Route::post("thiet-ke/delete",['uses' => 'AdminController@delete']);
-    //Route to Suicide (Tư vấn)
-    Route::get("/tu-van/{id}",['uses' => 'AdminController@suicide']);    
-    Route::get("/tu-van/tao-moi/{id}",['uses' => 'AdminController@suicideCreate']);    
-    Route::post("/tu-van/tao-moi/{id}",['uses' => 'AdminController@post_suicideCreate']);  
-    Route::post("tu-van/delete",['uses' => 'AdminController@deleteSuicide']);  
-
-    //Route to News
-    Route::get("/tin-tuc",['uses' => 'AdminController@news']); 
-    Route::get("/tin-tuc/tao-moi",['uses' => 'AdminController@createNews']); 
-    Route::post("/tin-tuc/tao-moi",['uses' => 'AdminController@post_createNews']);  
-    Route::post("/deleteNews",['uses' => 'AdminController@delNews']);     
-});
+Route::get('/danh-muc/{theloai}/{slug}', 'HomeController@product');
