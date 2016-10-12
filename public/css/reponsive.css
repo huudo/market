@@ -20,7 +20,7 @@
         text-align: left;
         padding-left: 22px;
     }
-.menu-active span.menuicon{
+    .menu-active span.menuicon{
         background: url('../images/menuicon.png') no-repeat scroll;
         float: right;
         height: 30px;
@@ -78,4 +78,9 @@
         border-right: none;
     }
 
+}
+@media(min-width : 900px)  {
+    #navigation{
+        display: block;
+    }
 }

@@ -1,3 +1,4 @@
+
 <header>
     <div class="topPage" style="width: 100%; height: 34px; float: left; border: solid 0px Blue; background: #000000;
                     z-index: 999999; position: relative;">
@@ -68,7 +69,14 @@
                                 <div class="my_basket">
                                     <span class="my-cart">MY CART</span></br>
 
-                                    <span class="item"><i class="spanCartCount">0</i> Item <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                                    <span class="item">
+                                    <i class="spanCartCount">
+                                        <?php
+                                            $arr = Session::get('cart.id');
+                                            echo (count($arr));
+                                        ?>
+                                    </i> 
+                                    Item <i class="fa fa-caret-right" aria-hidden="true"></i></span>
                                 </div>
                             </div>  
                         </div>

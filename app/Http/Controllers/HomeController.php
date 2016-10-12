@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Session;
 
 use App\DanhMuc;
 use App\TheLoai;
@@ -43,5 +45,11 @@ class HomeController extends Controller
         $data['listMenu'] = DanhMuc::getListMenu($menu);
 
         return view('page.sanpham',$data);
+    }
+
+    public function addToCart(){
+        $data = Input::all();   
+        Session::push('cart.id', 'developers');
+        return $data['email'];
     }
 }

@@ -23,8 +23,5 @@ class TheLoai extends Model implements SluggableInterface{
         }
         return $result;
     }
-    public static function getInfoPage($menu){
-        $result = TheLoai::where('slug',$menu)->first();
-        return $result;
-    }
+   
 }

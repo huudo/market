@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/style.css')}}>
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/reponsive.css')}}>
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/jcarousel.responsive.css')}}>
-    
+
     <script type="text/javascript" src={{Asset('public/js/jquery213.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/api.jquery.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/bootstrap.min.js')}}></script>
@@ -155,7 +155,25 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $(".menu-active").click(function() {
+          var status = $("#navigation").css('display');
+          if(window.innerWidth < 876){
+            if(status == "block"){
+                document.getElementById("navigation").style.display = "none";
+              }else{
+                document.getElementById("navigation").style.display = "block";
+            }
+          }
+          
+        });
+        window.onresize = function(event) {
+            if(window.innerWidth >= 876){
+                document.getElementById("navigation").style.display = "block";
+            }
+        };
 
+    </script>
     @include('includes.footer')
 </body>
 </html>

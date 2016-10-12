@@ -12,13 +12,17 @@
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/default.css')}}>
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/reponsive.css')}}>
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/jcarousel.responsive.css')}}>
+
     <script type="text/javascript" src={{Asset('public/js/jquery213.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/api.jquery.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/bootstrap.min.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/nav-menu.js')}}></script>
+    <script type="text/javascript" src={{Asset('public/js/addcart.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/jquery.jcarousel.min.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/jcarousel.responsive.js')}}></script>
+
 <body>
+    <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
     @include('includes.header')
      <div class="container">
         <div class="row">
@@ -76,5 +80,19 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        document.getElementById("navigation").style.display = "none";
+        $(".menu-active").click(function() {
+            var status = $("#navigation").css('display');
+          
+            if(status == "block"){
+                document.getElementById("navigation").style.display = "none";
+              }else{
+                document.getElementById("navigation").style.display = "block";
+            }
+          
+        });
+
+    </script>
 </body>
 </html>    
