@@ -18,7 +18,14 @@
     <div class="wrapper">
         <div class="container">
             <div class="row">
+                <div class="col-md-8">
+                    @foreach($products as $product)
+                       {{$product['id']}}</br>
+                    @endforeach
+                </div>  
+                <div class="col-md-4">
 
+                </div>
             </div>
         </div>
     </div>

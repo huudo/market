@@ -43,25 +43,20 @@ class HomeController extends Controller
         $danhmuc = DanhMuc::getInfoPage($menu);
         $data['page'] = $danhmuc;
         $data['listMenu'] = DanhMuc::getListMenu($menu);
-        // $product = new SanPham;
-        // $product ->name = "Rau muống";
-        // $product ->tloai_id = 1;
-        // $product -> price = "3000";
-        // $product ->weigh = "0.5Kg";
-        // $product ->img = "product.jpg";
-        // $product->save();
-
+        $data['products'] = SanPham::getProduct();
         return view('page.sanpham',$data);
     }
 
     public function addToCart(){
         $data = Input::all();   
-        Session::push('cart.id', 'developers');
-        return $data['email'];
+        Session::push('cart.id', $data['id']);
+        return $data['id'];
     }
 
     public function payment(){
-       $data['te'] = 12;
+        $listProductId = Session::get('cart.id');
+        $listProduct = SanPham::getListProduct($listProductId);
+        $data['products'] = $listProduct;
         return view('page.thanhtoan',$data);
     }
 }
