@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 13, 2016 at 09:10 AM
+-- Generation Time: Oct 13, 2016 at 12:10 PM
 -- Server version: 10.0.17-MariaDB
 -- PHP Version: 5.6.14
 
@@ -101,7 +101,17 @@ CREATE TABLE `sanpham` (
 --
 
 INSERT INTO `sanpham` (`id`, `tloai_id`, `name`, `slug`, `price`, `weigh`, `img`, `created_at`, `updated_at`) VALUES
-(2, 1, 'Rau muống', 'rau-muong', '3000', '1', 'product.jpg', '2016-10-12 19:25:25', '2016-10-12 19:25:25');
+(2, 1, 'Rau muống', 'rau-muong', '3000', '1', 'product.jpg', '2016-10-12 19:25:25', '2016-10-12 19:25:25'),
+(3, 1, '0', '0', '3000', '0.5Kg', 'product.jpg', '2016-10-13 01:49:37', '2016-10-13 01:49:37'),
+(4, 1, '1', '1', '3000', '0.5Kg', 'product.jpg', '2016-10-13 01:49:37', '2016-10-13 01:49:37'),
+(5, 1, '2', '2', '3000', '0.5Kg', 'product.jpg', '2016-10-13 01:49:37', '2016-10-13 01:49:37'),
+(6, 1, '3', '3', '3000', '0.5Kg', 'product.jpg', '2016-10-13 01:49:37', '2016-10-13 01:49:37'),
+(7, 1, '4', '4', '3000', '0.5Kg', 'product.jpg', '2016-10-13 01:49:38', '2016-10-13 01:49:38'),
+(8, 1, '5', '5', '3000', '0.5Kg', 'product.jpg', '2016-10-13 01:49:38', '2016-10-13 01:49:38'),
+(9, 1, '6', '6', '3000', '0.5Kg', 'product.jpg', '2016-10-13 01:49:38', '2016-10-13 01:49:38'),
+(10, 1, '7', '7', '3000', '0.5Kg', 'product.jpg', '2016-10-13 01:49:38', '2016-10-13 01:49:38'),
+(11, 1, '8', '8', '3000', '0.5Kg', 'product.jpg', '2016-10-13 01:49:38', '2016-10-13 01:49:38'),
+(12, 1, '9', '9', '3000', '0.5Kg', 'product.jpg', '2016-10-13 01:49:38', '2016-10-13 01:49:38');
 
 -- --------------------------------------------------------
 
@@ -203,7 +213,7 @@ ALTER TABLE `danhmuc`
 -- AUTO_INCREMENT for table `sanpham`
 --
 ALTER TABLE `sanpham`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `theloai`
 --
