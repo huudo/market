@@ -20,6 +20,9 @@
     <script type="text/javascript" src={{Asset('public/js/addcart.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/jquery.jcarousel.min.js')}}></script>
     <script type="text/javascript" src={{Asset('public/js/jcarousel.responsive.js')}}></script>
+     
+
+    
 
 <body>
     <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />

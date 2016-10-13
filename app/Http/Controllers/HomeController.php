@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Session;
 
 use App\DanhMuc;
 use App\TheLoai;
+use App\SanPham;
 
 class HomeController extends Controller
 {
@@ -30,7 +31,6 @@ class HomeController extends Controller
     public function category($menu){
         $data['danhmuc'] = DanhMuc::getDanhMuc();
         $data['theloai'] = TheLoai::getTheLoai();
-
         $danhmuc = DanhMuc::getInfoPage($menu);
         $data['page'] = $danhmuc;
         $data['listMenu'] = DanhMuc::getListMenu($menu);
@@ -43,6 +43,13 @@ class HomeController extends Controller
         $danhmuc = DanhMuc::getInfoPage($menu);
         $data['page'] = $danhmuc;
         $data['listMenu'] = DanhMuc::getListMenu($menu);
+        // $product = new SanPham;
+        // $product ->name = "Rau muống";
+        // $product ->tloai_id = 1;
+        // $product -> price = "3000";
+        // $product ->weigh = "0.5Kg";
+        // $product ->img = "product.jpg";
+        // $product->save();
 
         return view('page.sanpham',$data);
     }
@@ -51,5 +58,10 @@ class HomeController extends Controller
         $data = Input::all();   
         Session::push('cart.id', 'developers');
         return $data['email'];
+    }
+
+    public function payment(){
+       $data['te'] = 12;
+        return view('page.thanhtoan',$data);
     }
 }

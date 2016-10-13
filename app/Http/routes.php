@@ -23,3 +23,5 @@ Route::get('/danh-muc/{menu}', 'HomeController@category');
 Route::get('/danh-muc/{theloai}/{slug}', 'HomeController@product');
 
 Route::post('/addToCart','HomeController@addToCart');
+
+Route::get('/thanh-toan','HomeController@payment');
